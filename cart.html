@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="header_menu" id="header_menu">
+    <div class="container-fluid px-0 shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 ">
+        <a class="navbar-brand pl-5 pl-small-0" href="index.html">
+          <img src="./assets/pai-high-resolution-logo-black.png" class="img img-fluid" width="120px" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./products.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="search mr-3">
+            <a href="search.html" class="btn btn-sm btn-outline-primary">
+              <b>Search</b>
+            </a>
+          </div>
+          <div class="cart">
+            <a href="cart.html">
+              
+              <img src="./assets/cart icon.svg" alt="cart icon" height="30px" weight="30px">
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <!--cart begin-->
+  <section class="cart py-5 my-5" id="cart">
+    <div class="container ">
+      <div class="section_title text-center mb-5">
+        <h1 class="text-capitalize">Cart</h1>
+      </div>
+      <div class="row bg_cart_1 rounded">
+        <!--Grid column-->
+        <div class="col-md-8 border-right">
+          <!-- Card -->
+          <div class="mb-3">
+            <div class="pt-4">
+              <h5 class="mb-4">Cart (<span>2</span> items)</h5>
+              <div class="row mb-4">
+                <div class="col-md-5 col-lg-3 col-xl-3">
+                  <div class="rounded mb-3 mb-md-0">
+                    <img class="img-fluid w-100 rounded" src="./assets/tshirt1.jpg" alt="Sample">
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-9 col-xl-9">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h5>Black t-Shirt</h5>
+                        <p class="mb-3 text-muted text-uppercase small">Shirt -
+                          black</p>
+                        <p class="mb-2 text-muted text-uppercase small">Color:
+                          black</p>
+                        <p class="mb-3 text-muted text-uppercase small">Size:
+                          M</p>
+                      </div>
+                      <div>
+                        <div class="mb-0 w-100">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="btn btn-sm btn-outline-primary">
+                            <img src="./assets/dash.svg" class="fas fa-minus" alt="minus">
+                          </button>
+                          <input class="quantity text-center" min="0" max="10" name="quantity" value="1" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="btn btn-sm btn-outline-primary">
+                            <img src="./assets/plus-lg.svg" class="fas fa-plus" alt="plus">
+                          </button>
+                        </div>
+                        <small class="form-text text-muted text-center">
+                          (Note, 1 piece)
+                        </small>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <a href="javascript:;" type="button" class="small text-uppercase mr-3"><i
+                            class="fas fa-trash-alt mr-1"></i> Remove item </a>
+                      </div>
+                      <p class="mb-0"><span><strong id="summary">₹349</strong></span></p class="mb-0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <div class="row mb-4">
+                <div class="col-md-5 col-lg-3 col-xl-3">
+                  <div class="rounded mb-3 mb-md-0">
+                    <img class="img-fluid w-100 rounded" src="./assets/shoe1.jpg" alt="Sample">
+                  </div>
+                </div>
+                <div class="col-md-7 col-lg-9 col-xl-9">
+                  <div>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <h5>Classic Shoe</h5>
+                        <p class="mb-3 text-muted text-uppercase small">Shoe -
+                          black</p>
+                        <p class="mb-2 text-muted text-uppercase small">Color:
+                          black</p>
+                        <p class="mb-3 text-muted text-uppercase small">Size:
+                          8</p>
+                      </div>
+                      <div>
+                        <div class="mb-0 w-100">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                            class="btn btn-sm btn-outline-primary">
+                            <img src="./assets/dash.svg" class="fas fa-minus" alt="minus">
+                          </button>
+                          <input class="quantity text-center" min="0" max="10" name="quantity" value="1" type="number">
+                          <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="btn btn-sm btn-outline-primary">
+                            <img src="./assets/plus-lg.svg" class="fas fa-plus" alt="plus" >
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <a href="javascript:;" type="button" class="card-link-secondary small text-uppercase mr-3">
+                          <i class="fas fa-trash-alt mr-1"></i> Remove item
+                        </a>
+                      </div>
+                      <p class="mb-0"><span><strong>₹999</strong></span></p class="mb-0">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-md-4 rounded">
+          <!-- Card -->
+          <div class="mb-3">
+            <div class="pt-4">
+              <h5 class="mb-3">Order summary</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between
+align-items-center border-0 px-0 pb-2">
+                  <span>Black t-Shirt</span>
+                  <span>x2</span>
+                  <span>₹349</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between
+align-items-center border-0 px-0 pb-2">
+                  <span>Classic Shoe</span>
+                  <span>x2</span>
+                  <span>₹999</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between
+align-items-center border-top px-0 mb-3">
+                  <div>
+                    <strong>Total amount</strong>
+                    <strong>
+                      <p class="mb-0">(including VAT)</p>
+                    </strong>
+                  </div>
+                  <span><strong>₹1348</strong></span>
+                </li>
+              </ul>
+              <a href="checkout.html" class="btn btn-primary btn-block c">Go to
+                Checkout</a>
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+        <!--Grid column-->
+      </div>
+    </div>
+  </section>
+  <!--cart end-->
+  <section>
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col mb-3">
+          <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <p class="text-body-secondary">© 2023</p>
+        </div>
+        <div class="col mb-3">
+        </div>
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body{
+  background-color:rgb(247, 216, 170)
+}
+
+
+
+.checked{
+  color: goldenrod;
+}
+.unchecked{
+  color:rgb(252, 215, 169)
+}
+.badge{
+  background-color: red;
+}
+.carts{
+  color:red;
+  
+}
+ .cls{
+  text-decoration: none;
+ }
+ .cart{
+  padding:0 20px;
+ }
+
+ .pd{
+  color:black;
+  text-decoration: none;
+ }
+.btn{
+  color:black;
+  
+  border-color: black;
+}
+.nav-link{
+  font-weight: bolder;
+  margin-left: auto;
+}
+
+.br{
+  margin-bottom: 20px;
+}
+.form-group{
+  margin:20px;
+  border-color: black;
+ 
+}
+form{
+  text-align: center;
+}
+textarea{
+  resize: none;
+}
+.c{
+  background-color: azure;
+}
