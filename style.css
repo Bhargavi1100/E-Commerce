@@ -55,3 +55,37 @@ textarea{
 .c{
   background-color: azure;
 }
+.bi-bookmark-heart{
+  padding: 3px;
+}
+.bi-person-check{
+  padding: 3px;
+}
+.bi-truck{
+  padding: 3px;
+}
+*{
+ scroll-behavior: smooth;
+ 
+}
+.backtop {
+    position: fixed;
+    right: 20px; 
+    bottom: 20px; 
+  }
+  .quantity{
+    padding-bottom: 5px;
+  }
+  .co{
+    
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .bi-check-circle{
+    color: green;
+  }
+  .h{
+    color: black;
+    text-decoration:dashed
+  }
